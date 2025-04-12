@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign In / Sign Up</title>
+  <link rel="stylesheet" href="auth.css">
+  <script defer src="auth.js"></script>
+</head>
+<body>
+  <!-- Background Video -->
+  <video id="canva" autoplay loop muted>
+    <source src="Cinematic FOOD video with SMOOTH B ROLL - Sony A7siii - Gate Quoin Rock Restaurant (1080p).mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <div class="auth-container">
+    <!-- Sign In Form -->
+    <div class="form-container sign-in-container">
+      <form id="signInForm">
+        <h1>Sign In</h1>
+        <input type="email" placeholder="Email" id="signInEmail" required>
+        <input type="password" placeholder="Password" id="signInPassword" required>
+        <button type="submit">Sign In</button>
+        <p class="switch-text">Don't have an account? <span id="switchToSignUp">Sign Up</span></p>
+      </form>
+    </div>
+
+    <!-- Sign Up Form -->
+    <div class="form-container sign-up-container hidden">
+      <form id="signUpForm">
+        <h1>Create Account</h1>
+        <input type="text" placeholder="Name" id="signUpName" required>
+        <input type="email" placeholder="Email" id="signUpEmail" required>
+        <input type="password" placeholder="Password" id="signUpPassword" required>
+        <button type="submit">Sign Up</button>
+        <p class="switch-text">Already have an account? <span id="switchToSignIn">Sign In</span></p>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
+
+
+
+
+
+
