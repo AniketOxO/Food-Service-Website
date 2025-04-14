@@ -556,115 +556,138 @@ section {
 # About Section
 --
 ------------------------------------------------------------*/
-.about {
-  background-color: #f7d5d5;
-  padding: 80px 20px;
-  position: relative;
-  font-family: 'Segoe UI', sans-serif;
-  color: #111;
+.about .about-img {
+  min-height: 500px;
 }
 
-.about-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 40px;
-  align-items: center;
-  max-width: 1200px;
-  margin: auto;
-}
-
-.about-image {
-  flex: 1 1 45%;
-  position: relative;
-}
-
-.about-image img {
-  width: 100%;
-  border-radius: 12px;
-  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
-}
-
-.play-btn {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 90px;
-  height: 90px;
-  transform: translate(-50%, -50%);
-  background: radial-gradient(var(--color-primary, #ce1212) 50%, rgba(206, 18, 18, 0.4) 52%);
-  border-radius: 50%;
-  cursor: pointer;
-}
-
-.about-content {
-  flex: 1 1 50%;
-}
-
-.about-content h3 {
-  font-size: 36px;
+.about h3 {
   font-weight: 700;
-  margin-bottom: 20px;
+  font-size: 36px;
+  margin-bottom: 30px;
+  font-family: var(--font-secondary);
 }
 
-.about-content p {
-  font-size: 16px;
-  margin-bottom: 20px;
-  line-height: 1.6;
+.about .call-us {
+  left: 10%;
+  right: 10%;
+  bottom: 10%;
+  background-color: #fff;
+  box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  text-align: center;
 }
 
-.about-content ul {
+.about .call-us h4 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-family: var(--font-default);
+}
+
+.about .call-us p {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.about .content ul {
   list-style: none;
   padding: 0;
 }
 
-.about-content ul li {
+.about .content ul li {
+  padding: 0 0 8px 26px;
   position: relative;
-  padding-left: 28px;
-  margin-bottom: 12px;
 }
 
-.about-content ul li i {
+.about .content ul i {
   position: absolute;
+  font-size: 20px;
   left: 0;
-  top: 2px;
-  color: var(--color-primary, #ce1212);
+  top: -3px;
+  color: var(--color-primary);
 }
 
-.about-call-us {
-  max-width: 400px;
-  background: #080808;
-  margin: 40px auto 0;
-  padding: 20px;
-  text-align: center;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+.about .content p:last-child {
+  margin-bottom: 0;
 }
 
-.about-call-us h4 {
-  font-size: 22px;
-  margin-bottom: 5px;
-  font-weight: 700;
+.about .play-btn {
+  width: 94px;
+  height: 94px;
+  background: radial-gradient(var(--color-primary) 50%, rgba(206, 18, 18, 0.4) 52%);
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  left: calc(50% - 47px);
+  top: calc(50% - 47px);
+  overflow: hidden;
 }
 
-.about-call-us p {
-  font-size: 24px;
-  font-weight: 600;
-  color: var(--color-primary, #ce1212);
+.about .play-btn:before {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  animation-delay: 0s;
+  animation: pulsate-btn 2s;
+  animation-direction: forwards;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps;
+  opacity: 1;
+  border-radius: 50%;
+  border: 5px solid rgba(206, 18, 18, 0.7);
+  top: -15%;
+  left: -15%;
+  background: rgba(198, 16, 0, 0);
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .about-container {
-    flex-direction: column;
-    text-align: center;
+.about .play-btn:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-40%) translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 15px solid #fff;
+  z-index: 100;
+  transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.about .play-btn:hover:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-40%) translateY(-50%);
+  width: 0;
+  height: 0;
+  border: none;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 15px solid #fff;
+  z-index: 200;
+  animation: none;
+  border-radius: 0;
+}
+
+.about .play-btn:hover:after {
+  border-left: 15px solid var(--color-primary);
+  transform: scale(20);
+}
+
+@keyframes pulsate-btn {
+  0% {
+    transform: scale(0.6, 0.6);
+    opacity: 1;
   }
 
-  .about-content h3 {
-    font-size: 28px;
-  }
-
-  .about-call-us {
-    margin-top: 30px;
+  100% {
+    transform: scale(1, 1);
+    opacity: 0;
   }
 }
 
