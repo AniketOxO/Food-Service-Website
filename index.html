@@ -39,7 +39,7 @@
 
       <a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0">
         <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
+       <img src="ezyarohalogo.png" alt="ezyaroha"> 
         <h1>Ezyaroha<span>.</span></h1>
       </a>
 
@@ -72,71 +72,88 @@
 <!-- Example HTML where the headline links to a new page -->
 
 
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="hero d-flex align-items-center section-bg">
-    <div class="container">
-      <div class="row justify-content-between gy-5">
-        <div class="col-lg-5 order-2 order-lg-1 d-flex flex-column justify-content-center align-items-center align-items-lg-start text-center text-lg-start">
-          <h2 data-aos="fade-up">Enjoy Your Healthy<br>Delicious Food</h2>
-          <p data-aos="fade-up" data-aos-delay="100">With every bite we make sure you never feel distant from the comfort of your loved ones.</p>
-          <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
-            <a href="#book-a-table" class="btn-book-a-table">Book a Table</a>
-            <a href="https://www.youtube.com/watch?v=dA0VGEbbw4g" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
-          </div>
+  <!-- ======= Hero Section with Background Video Only ======= -->
+<section id="hero" class="hero d-flex align-items-center justify-content-center text-center position-relative">
+
+  <!-- Background Video -->
+  <video autoplay muted loop playsinline class="bg-video">
+    <source src="aestheticfood.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Dark overlay -->
+  <div class="overlay"></div>
+
+  <!-- Content -->
+  <div class="container position-relative z-3">
+    <h2 data-aos="fade-up" class="text-white">Enjoy Your Healthy<br>Delicious Food</h2>
+    <p data-aos="fade-up" data-aos-delay="100" class="text-white">
+      With every bite, we make sure you never feel distant from the comfort of your loved ones.
+    </p>
+    <div class="d-flex justify-content-center gap-3 mt-4" data-aos="fade-up" data-aos-delay="200">
+      <a href="#book-a-table" class="btn-book-a-table">Book a Table</a>
+      <a href="https://www.youtube.com/watch?v=dA0VGEbbw4g" class="glightbox btn-watch-video d-flex align-items-center text-white">
+        <i class="bi bi-play-circle"></i><span class="ms-2">Watch Video</span>
+      </a>
+    </div>
+  </div>
+
+</section>
+
+
+  <main id="main">
+<!-- ======= Enhanced About Section ======= -->
+<section id="about" class="about position-relative text-white">
+  <!-- Video Background -->
+  <video autoplay muted loop playsinline class="position-absolute w-100 h-100 object-fit-cover" style="z-index: -1; top: 0; left: 0;">
+    <source src="your-video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Overlay for dark effect -->
+  <div class="position-absolute w-100 h-100" style="background: #616060e5; top: 0; left: 0; z-index: -1;"></div>
+
+  <div class="container py-5" data-aos="fade-up">
+    <div class="section-header text-center mb-5">
+      <h2 class="display-5 fw-bold">About Ezyaroha</h2>
+      <p class="fs-5 text-light">Where Food Meets <span class="text-warning">Emotion</span></p>
+    </div>
+
+    <div class="row align-items-center gy-5">
+      <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+        <h3 class="mb-4 fw-semibold">Not just food — we deliver warmth, care, and stories.</h3>
+        <p class="fst-italic">
+          Ezyaroha isn’t just a brand — it's a movement of mindful meals and soulful delivery.
+        </p>
+        <ul class="list-unstyled fs-6">
+          <li><i class="bi bi-check2-all text-warning me-2"></i> Curated dishes with global flair and local comfort.</li>
+          <li><i class="bi bi-check2-all text-warning me-2"></i> Handpicked partners to ensure top-tier quality & hygiene.</li>
+          <li><i class="bi bi-check2-all text-warning me-2"></i> Seamless ordering with personalized customer care.</li>
+        </ul>
+        <p>
+          From cravings to celebrations, Ezyaroha delivers more than meals — it delivers memories.
+        </p>
+
+        <!-- Book a Table -->
+        <div class="mt-4">
+          <a href="#book-a-table" class="btn btn-warning btn-lg px-4 me-3 shadow">Book a Table</a>
+          <a href="https://www.youtube.com/watch?v=dA0VGEbbw4g" class="btn btn-outline-light btn-lg px-4 glightbox">Watch Video</a>
         </div>
-        <div class="col-lg-5 order-1 order-lg-2 text-center text-lg-start">
-          <img src="assets/img/hero-img.png" class="img-fluid" alt="" data-aos="zoom-out" data-aos-delay="300">
+      </div>
+
+      <!-- Optional Video Preview or Brand Element -->
+      <div class="col-lg-6 d-flex justify-content-center" data-aos="fade-left" data-aos-delay="200">
+        <div class="position-relative">
+          <img src="dining.jpg" alt="Dining Vibes" class="img-fluid rounded-4 shadow">
+          <a href="https://www.youtube.com/watch?v=dA0VGEbbw4g" class="glightbox play-btn position-absolute top-50 start-50 translate-middle">
+            <i class="bi bi-play-circle-fill display-1 text-white"></i>
+          </a>
         </div>
       </div>
     </div>
-  </section><!-- End Hero Section -->
+  </div>
+</section>
 
-  <main id="main">
-
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-header">
-          <h2>About Us</h2>
-          <p>Learn More <span>About Us</span></p>
-        </div>
-
-        <div class="row gy-4">
-          <div class="col-lg-7 position-relative about-img" style="background-image: url(vikaskhanna.jpg) ;" data-aos="fade-up" data-aos-delay="150">
-            <div class="call-us position-absolute">
-              <h4>Book a Table</h4>
-              <p>+91 7876677048</p>
-            </div>
-          </div>
-          <div class="col-lg-5 d-flex align-items-end" data-aos="fade-up" data-aos-delay="300">
-            <div class="content ps-0 ps-lg-5">
-              <p class="fst-italic">
-                Welcome to Ezyaroha, where we make food delivery an unforgettable experience! 
-                At Ezyaroha,
-            
-              </p>
-              <ul>
-                <li><i class="bi bi-check2-all"></i> we believe that great food should be accessible
-                  convenient, and always delivered with a smile.</li>
-                <li><i class="bi bi-check2-all"></i> Whether you're craving a quick snack, a hearty meal, or refreshing beverages, we’ve got you covered.</li>
-                <li><i class="bi bi-check2-all"></i> From local specialties to international flavors, enjoy a diverse range of food options tailored to your cravings.</li>
-              </ul>
-              <p>
-                Our platform offers a wide variety of delicious options from local favorites to international delights, ensuring there's something for everyone. 
-                We work closely with the best restaurants and food outlets in town to bring you fresh, quality meals straight to your door.
-              </p>
-
-              <div class="position-relative mt-4">
-                <img src="dining.jpg" class="img-fluid" alt="">
-                <a href="https://www.youtube.com/watch?v=dA0VGEbbw4g" class="glightbox play-btn"></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End About Section -->
 
     <!-- ======= Why Us Section ======= -->
     <section id="why-us" class="why-us section-bg">
@@ -280,8 +297,8 @@
             <div class="row gy-5">
 
               <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-1.png" class="glightbox"><img src="assets/img/menu/menu-item-1.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Russian Salad</h4>
+                <a href="23-removebg-preview.png" class="glightbox"><img src="23-removebg-preview.png" class="menu-img img-fluid" alt=""></a>
+                <h4>Pasta</h4>
                 <p class="ingredients">
                   Mayonnaise,Eggs,Meat,Brined pickles
                 </p>
@@ -295,7 +312,7 @@
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-2.png" class="glightbox"><img src="assets/img/menu/menu-item-2.png" class="menu-img img-fluid" alt=""></a>
+                <a href="30-removebg-preview.png" class="glightbox"><img src="30-removebg-preview.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Salted Fried Chicken</h4>
                 <p class="ingredients">
                   Bacon ,Salad,Beans,Eggs,Chillie Sauce
@@ -310,7 +327,7 @@
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-3.png" class="glightbox"><img src="assets/img/menu/menu-item-3.png" class="menu-img img-fluid" alt=""></a>
+                <a href="5-removebg-preview.png" class="glightbox"><img src="5-removebg-preview.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Mexican Noodles</h4>
                 <p class="ingredients">
                   Noodles, Secret Chillie Sauce, Cabbage, filede
@@ -393,7 +410,7 @@
 
               <div class="col-lg-4 menu-item">
                 <a href="12-removebg-preview.png" class="glightbox"><img src="12-removebg-preview.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Aut Luia</h4>
+                <h4>Mix Rice</h4>
                 <p class="ingredients">
                  Corn ,Carrot,Special Sauce
                 </p>
@@ -406,13 +423,13 @@
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href="13-removebg-preview.png" class="glightbox"><img src="13-removebg-preview.png" class="menu-img img-fluid" alt=""></a>
+                <a href="chickenchillieremove.png" class="glightbox"><img src="chickenchillieremove.png" class="menu-img img-fluid" alt=""></a>
                 <h4>Chicken Chillie Dry</h4>
                 <p class="ingredients">
                   Chicken,Special Chillie Gravy
                 </p>
                 <p class="price">
-                  $450
+                  ₹450
                 </p>
                 <button class="add-to-cart-btn" onclick="addToCart('Chicken Chillie Dry', 450)">
                     <i class="bi bi-cart-plus"></i> Add to Cart
@@ -454,7 +471,7 @@
                 Special Beef,Spicy Noodles, Sauces
                 </p>
                 <p class="price">
-                  $400
+                  ₹400
                 </p>
                 <button class="add-to-cart-btn" onclick="addToCart('Beef Rendang', 400)">
                     <i class="bi bi-cart-plus"></i> Add to Cart
@@ -474,13 +491,13 @@
             <div class="row gy-5">
 
               <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-1.png" class="glightbox"><img src="assets/img/menu/menu-item-1.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Magnam Tiste</h4>
+                <a href="32-removebg-preview.png" class="glightbox"><img src="32-removebg-preview.png" class="menu-img img-fluid" alt=""></a>
+                <h4>Puri Chole</h4>
                 <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
+                  Puri,Chole,Indian Masale
                 </p>
                 <p class="price">
-                  $5.95
+                  ₹150
                 </p>
                 <button class="add-to-cart-btn" onclick="addToCart('Russian Salad', 550)">
                     <i class="bi bi-cart-plus"></i> Add to Cart
@@ -488,13 +505,14 @@
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-2.png" class="glightbox"><img src="assets/img/menu/menu-item-2.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Aut Luia</h4>
+                <a href="crispybuttons.png" class="glightbox"><img src="crispybuttons.png" class="menu-img img-fluid" alt=""></a>
+                <h4>Crispy Buttons</h4>
                 <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
+                  Crispy, Spicy, Special Sauce
+      
                 </p>
                 <p class="price">
-                  $14.95
+                  ₹200
                 </p>
                 <button class="add-to-cart-btn" onclick="addToCart('Russian Salad', 550)">
                   <i class="bi bi-cart-plus"></i> Add to Cart
@@ -502,13 +520,13 @@
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-3.png" class="glightbox"><img src="assets/img/menu/menu-item-3.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Est Eligendi</h4>
+                <a href="19-removebg-preview.png" class="glightbox"><img src="19-removebg-preview.png" class="menu-img img-fluid" alt=""></a>
+                <h4>Jjampong</h4>
                 <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
+                Zucchini,Carrots,Cabbage,Spicy Sauce
                 </p>
                 <p class="price">
-                  $8.95
+                  ₹400
                 </p>
                 <button class="add-to-cart-btn" onclick="addToCart('Russian Salad', 550)">
                     <i class="bi bi-cart-plus"></i> Add to Cart
@@ -516,24 +534,10 @@
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-4.png" class="glightbox"><img src="assets/img/menu/menu-item-4.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Eos Luibusdam</h4>
+                <a href="chickenchillieremov.png" class="glightbox"><img src="chickenchillieremov.png" class="menu-img img-fluid" alt=""></a>
+                <h4>Chicken Chilli</h4>
                 <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
-                </p>
-                <p class="price">
-                  $12.95
-                </p>
-                <button class="add-to-cart-btn" onclick="addToCart('Russian Salad', 550)">
-                    <i class="bi bi-cart-plus"></i> Add to Cart
-                  </button>
-              </div><!-- Menu Item -->
-
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-5.png" class="glightbox"><img src="assets/img/menu/menu-item-5.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Eos Luibusdam</h4>
-                <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
+                  Chicken,Spicy Sauce,Chillies
                 </p>
                 <p class="price">
                   $12.95
@@ -544,10 +548,24 @@
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-6.png" class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Laboriosam Direva</h4>
+                <a href="food-beeftacos.png" class="glightbox"><img src="food-beeftacos.png" class="menu-img img-fluid" alt=""></a>
+                <h4>Beef Tacos</h4>
                 <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
+                  Tacos, Beef, Spicy Sauce
+                </p>
+                <p class="price">
+                  ₹250
+                </p>
+                <button class="add-to-cart-btn" onclick="addToCart('Russian Salad', 550)">
+                    <i class="bi bi-cart-plus"></i> Add to Cart
+                  </button>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="stakeremov.png" class="glightbox"><img src="stakeremov.png" class="menu-img img-fluid" alt=""></a>
+                <h4>Stake</h4>
+                <p class="ingredients">
+                 Stake, Spicy Sauce, Noodles
                 </p>
                 <p class="price">
                   $9.95
@@ -1403,28 +1421,8 @@
 
         </div>
 
-        <form action="forms/contact.php" method="post" role="form" class="php-email-form p-3 p-md-4">
-          <div class="row">
-            <div class="col-xl-6 form-group">
-              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-            </div>
-            <div class="col-xl-6 form-group">
-              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-            </div>
-          </div>
-          <div class="form-group">
-            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-          </div>
-          <div class="form-group">
-            <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-          </div>
-          <div class="my-3">
-            <div class="loading">Loading</div>
-            <div class="error-message"></div>
-            <div class="sent-message">Your message has been sent. Thank you!</div>
-          </div>
-          <div class="text-center"><button type="submit">Send Message</button></div>
-        </form>
+       
+        
 
       </div>
     </section>
@@ -1496,6 +1494,15 @@
   </footer><!-- End Footer -->
   <!-- End Footer -->
 
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --font-secondary: 'Inter', sans-serif;
+  }
+</style>
+
+
+
   <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <div id="preloader"></div>
@@ -1546,3 +1553,5 @@
       });
   });
 </script>
+
+
